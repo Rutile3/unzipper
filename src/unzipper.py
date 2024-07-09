@@ -11,5 +11,6 @@ def unzip_file(file_path, extract_to=None):
     if extract_to is None:
         extract_to = os.path.splitext(file_path)[0]
     with zipfile.ZipFile(file_path, "r") as zip_ref:
+        print(f"「{file_path}」の解凍開始…")
         zip_ref.extractall(extract_to)
-        print(f"Unzipped {file_path} to {extract_to}")
+        print(f"「{file_path}」の解凍終了…")
