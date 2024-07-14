@@ -3,7 +3,7 @@ from unzipper import is_zip_file, unzip_file
 
 
 # mainの関数の呼び出し
-def main():
+def main_func():
     # コマンドライン引数の設定
     parser = argparse.ArgumentParser(description="zipファイルを解凍します。")
     parser.add_argument("input_files", nargs="+", help="解凍するzipファイルのパス。")
@@ -22,4 +22,4 @@ def main():
 
 # mainの関数呼び出し
 if __name__ == "__main__":
-    main()
+    main_func()
