@@ -1,5 +1,5 @@
 import argparse
-from unzipper import is_zip_file, unzip_file
+from src.unzip_util import is_zip_file, unzip_file
 
 
 # mainの関数の呼び出し
