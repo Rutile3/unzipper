@@ -1,6 +1,6 @@
 import os
 import pytest
-from src.unzip_util import is_zip_file, unzip_file
+from main import is_zip_file, unzip_file
 
 
 @pytest.fixture
