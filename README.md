@@ -1,47 +1,44 @@
+
 # ![unzipper](https://i.gyazo.com/a3518df9db3107c94a9e079d24187541.png)
 
-zipファイル解凍ツール
+## 📗 概要
 
-## 仮想環境の構築＆起動
+「unzipper」は、Pythonで作成されたzipファイル解凍ツールです。  
+複数のzipファイルを一度に解凍できるように設計されています。
 
-Windows環境を前提に記述します。
+## 🪄 使い方
 
-仮想環境の作成
+「unzipper.exe」にzipファイルをドラッグ＆ドロップして解凍します。  
 
-``` powershell
-python -m venv venv
-```
+このプログラムは複数ファイルのドラッグ＆ドロップに対応しているため、  
+一度に複数のzipファイルを解凍できます。
 
-仮想環境の起動
+## 💻 開発環境
 
-``` powershell
-.\venv\Scripts\activate
-```
+- Python（Python3）
+- VSCode（Visual Studio Code）
 
-セキュリティポリシーに引っかかる場合
+## 🔨 開発環境構築
 
-``` powershell
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process    
-```
+この手順は、Windows環境でPythonとVSCodeは既にインストールされていることを前提に記述しています。
 
-仮想環境の停止
+ターミナル（PowerShell）で、以下のコマンドを順に実行してください。
 
 ``` powershell
-deactivate
+# 実行ポリシーの一時的な変更
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+python -m venv venv # 仮想環境の作成
+.\venv\Scripts\activate # 仮想環境の起動
+pip install -r requirements.txt # 依存関係の一括インストール
 ```
 
-## 単体テスト
+## 🎫 ライセンス
 
-``` powershell
-\picture_compiler> pytest tests
-```
+- [MIT](LICENSE)  
 
-## exe化
+## 👀 著者
 
-``` powershell
-pyinstaller .\main.py --clean --onefile --name=picture_compiler.exe
-```
-
-``` powershell
-pyinstaller main.spec --onefile
-```
+- [Github](https://github.com/Rutile3)
+- [X（旧Twitter）](https://x.com/Rutile_Darkness)
+- [Cosense（旧Scrapbox）](https://scrapbox.io/Rutile3-Tech/)  
