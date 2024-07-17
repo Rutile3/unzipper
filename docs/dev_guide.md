@@ -10,7 +10,7 @@
 仮想環境を起動し、以下のコマンドを実行してください。
 
 ``` powershell
-\unzipper> pytest tests # 単体テストの実行
+\unzipper> pytest tests
 ```
 
 ## 💾 exe化
@@ -18,5 +18,5 @@
 仮想環境を起動し、以下のコマンドを実行してください。
 
 ``` powershell
-pyinstaller .\main.py --clean --onefile --name=unzipper.exe #
+pyinstaller .\main.py --clean --onefile --name=unzipper.exe
 ```
