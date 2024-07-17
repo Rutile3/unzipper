@@ -14,11 +14,12 @@ def main_func():
     input_files = args.input_files
 
     # zipファイルなら解凍する
+    print(f"{len(input_files)}ファイル")
     for input_item in input_files:
         if is_zip_file(input_item):
             unzip_file(input_item)
         else:
-            print(f"「{input_item}」はzipファイルをではありません。")
+            print(f"「{input_item}」はzipファイルではありません。")
 
     input("enterキーでプログラムを終了します。")
 
@@ -30,17 +31,18 @@ def is_zip_file(file_path):
 
 # zipファイルを解凍します。
 def unzip_file(file_path, extract_to=None):
+    file_basename = os.path.basename(file_path)
     if extract_to is None:
         extract_to = os.path.splitext(file_path)[0]
     else:
-        basename_without_ext = os.path.splitext(os.path.basename(file_path))[0]
+        basename_without_ext = os.path.splitext(file_basename)[0]
         extract_to = os.path.join(extract_to, basename_without_ext)
 
     # zipファイルの解凍
     with zipfile.ZipFile(file_path, "r") as zip_ref:
-        print(f"「{file_path}」の解凍開始…")
+        print(f"解凍開始：{file_basename}")
         zip_ref.extractall(extract_to)
-        print(f"「{file_path}」の解凍終了…")
+        print(f"解凍終了：{file_basename}")
 
         # 解凍したファイルを返す
         extracted_files = zip_ref.namelist()
