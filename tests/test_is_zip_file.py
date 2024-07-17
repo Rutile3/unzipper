@@ -1,5 +1,5 @@
-import os
 from main import is_zip_file
+
 
 def test_is_zip_file():
     zip_path = "tests_data/example01.zip"
