@@ -6,6 +6,10 @@
 「unzipper」は、Pythonで作成されたzipファイル解凍ツールです。  
 複数のzipファイルを一度に解凍できるように設計されています。
 
+## ⬇️ ダウンロード
+
+[ダウンロードリンク](https://github.com/Rutile3/unzipper/releases/latest)
+
 ## 🪄 使い方
 
 「unzipper.exe」にzipファイルをドラッグ＆ドロップして解凍します。  
