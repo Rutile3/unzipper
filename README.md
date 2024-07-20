@@ -17,7 +17,7 @@
 このプログラムは複数ファイルのドラッグ＆ドロップに対応しているため、  
 一度に複数のzipファイルを解凍できます。
 
-![使用例](https://i.gyazo.com/ff7e13e030eaf8413a1d0db4c4b873b1.gif)
+![使用例](https://i.gyazo.com/dbc426d16facc15e5886ddf86ec22b0b.gif)
 
 ## 💻 開発環境
 
